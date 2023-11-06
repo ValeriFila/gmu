@@ -1,0 +1,534 @@
+/*!*********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./css/style.css ***!
+  \*********************************************************************************************/
+html {
+    font-size: 16px;
+    font-family: "Century Gothic";
+    color: rgba(21, 24, 57, 1);
+    background-color: rgba(36, 47, 77, 0.52);
+    /*--s: 30px; !* control the size*!*/
+    /*--c1: #e5fcc2;*/
+    /*--c2: #45ada8;*/
+
+    /*--_s:37.5% 12.5% at 62.5%;*/
+    /*--_g:34% 99%,#0000 101%;*/
+    /*--g1:radial-gradient(var(--_s) 100%,#0000 32%,var(--c1) var(--_g));*/
+    /*--g2:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c1) var(--_g));*/
+    /*--g3:radial-gradient(var(--_s) 100%,#0000 32%,var(--c2) var(--_g));*/
+    /*--g4:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c2) var(--_g));*/
+    /*background:*/
+    /*        var(--g1),*/
+    /*        var(--g2) 0                calc(3*var(--s)),*/
+    /*        var(--g3) var(--s)         calc(3*var(--s)),*/
+    /*        var(--g4) var(--s)         calc(6*var(--s)),*/
+    /*        var(--g1) calc(2*var(--s)) calc(6*var(--s)),*/
+    /*        var(--g2) calc(2*var(--s)) calc(9*var(--s)),*/
+    /*        var(--g3) calc(3*var(--s)) calc(9*var(--s)),*/
+    /*        var(--g4) calc(3*var(--s)) 0,*/
+    /*        repeating-linear-gradient(var(--c1) 0 25%,var(--c2) 0 50%);*/
+    /*background-size: calc(4*var(--s)) calc(12*var(--s));*/
+
+}
+
+
+body {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+div {
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.css-style__university--rInxRDJN {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+/*Верхнее меню*/
+.css-style__menu_header--X70RUMag {
+    width: 94%;
+    height: 10vh;
+}
+
+.css-style__menu--dfewCZrV {
+    width: 100%;
+}
+
+.css-style__icon--Xr6BSyep {
+    align-items: center;
+    cursor: pointer;
+}
+
+.css-style__icon--Xr6BSyep img {
+    width: 3em;
+    height: 3em;
+}
+
+.css-style__icon--Xr6BSyep p {
+    width: 12em;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.css-style__menu_items--fY97Vik3 {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 50px;
+}
+
+
+
+.css-style__item--eskMK6ni {
+    background-color: transparent;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-width: 0;
+    border-bottom-color: rgba(30, 34, 73, 0.16);
+    color: #1e1e3f;
+    transition: color 1s, border-bottom-width 2s, border-bottom-color 1s;
+}
+
+.css-style__item--eskMK6ni:hover {
+    color: rgba(30, 34, 73, 0.57);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(30, 34, 73, 0.57);
+}
+
+.css-style__menu_items--fY97Vik3 img {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    margin-right: 0;
+    opacity: 70%;
+    transition: opacity 1s;
+}
+
+.css-style__menu_items--fY97Vik3 img:hover {
+    opacity: 100%;
+}
+
+.css-style__mail--iGt1ndqV {
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    border-style: none;
+    background-color: rgba(30, 30, 63, 0.87);
+    color: rgba(221, 226, 238, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: font-size 2s, color 1s;
+}
+
+.css-style__mail--iGt1ndqV:hover {
+    -webkit-box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    font-size: 17px;
+    color: rgb(185, 191, 203);;
+}
+
+.css-style__popup--alHCIUji {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60vw;
+    height: 60vh;
+    background-color: #313167;
+    position: absolute;
+    visibility: hidden;
+    border-radius: 10px;
+    max-width: 900px;
+    min-width: 50vw;
+    z-index: 100;
+}
+
+#css-style__blur_background--J0tnXVU4 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.css-style__open--k_cqRr4Y {
+    backdrop-filter: blur(10px);
+    background-color: #0000004d;
+    z-index: 99 !important;
+}
+
+.css-style__empty_field--aQUKQXJV {
+    border-bottom-color: #e36969;
+}
+
+.css-style__full_field--PxjggCdR {
+    border-bottom-color: azure;
+}
+
+#css-style__write_email_form--jdl7XLRz {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+}
+
+#css-style__write_email_form--jdl7XLRz p{
+    color: #161638;
+    width: 80%;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.css-style__image_ship--WOcXWjrH {
+    width: 40%;
+}
+
+.css-style__image_ship--WOcXWjrH img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 80%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#css-style__name--EEznJZ2S {
+    margin-top: 70px;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(155, 155, 155, 0.7);
+    font-family: "Century Gothic";
+}
+
+textarea::-webkit-input-placeholder {
+    color: rgba(155, 155, 155, 0.7);
+    font-family: "Century Gothic";
+}
+
+.css-style__custom_input--qXwbVx1N {
+    width: 80%;
+    margin-top: 150px;
+    font-size: 19px;
+    color: #cecece;
+    font-family: "Century Gothic";
+    background-color: transparent;
+    outline: none;
+    border-style: solid;
+    border-width: 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#css-style__email--W7Aro_vi {
+    margin-top: 50px;
+}
+
+#css-style__text--xZviQr3H {
+    resize: none;
+    width: 80%;
+    margin-top: 50px;
+    height: 20%;
+}
+
+#css-style__confirm_button--tMwou2FJ {
+    width: 60%;
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    height: 50px;
+    font-family: "Century Gothic";
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 7px;
+    border: none;
+    transition: width 2s, background-color 1s, color 1s, letter-spacing 1s;
+}
+
+#css-style__confirm_button--tMwou2FJ:hover {
+    width: 50%;
+    background-color: #1e1e3f;
+    color: #e1deff;
+    letter-spacing: 1px;
+}
+
+/*Главная часть*/
+.css-style__main--jFGBGDYK {
+    width: 94%;
+    height: 80vh;
+    margin-bottom: 10vh;
+}
+
+/*Анимированная галерея ГМУ*/
+.css-style__animated_block--afSYS7rf {
+    position: relative;
+    justify-content: left;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: black;
+}
+
+#css-style__anim_block--KroiEhAW {
+    width: 100%;
+}
+
+.css-style__main_building--UCz13axy img{
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+#css-style__autoAnimSliderImage--pxjVPKcG {
+    transform: translate(0);
+    transition: transform 2s;
+}
+
+.css-style__gallery--ghGzhtKG{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.css-style__gallery--ghGzhtKG p{
+    font-size: 95px;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    transition: 1200ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 15rem;
+    color: rgba(221, 226, 238, 1);
+    outline: none;
+    text-align: center;
+}
+
+.css-style__gallery--ghGzhtKG p:hover {
+    font-variation-settings: "wght" 582;
+    letter-spacing: 1px;
+}
+
+/*Новости*/
+.css-style__news--nEYrk7WY{
+    width: 94%;
+    height: 80vh;
+    margin-bottom: 10vh;
+    background-color: rgba(30, 30, 63, 0.51);
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+.css-style__title--ufJKp6ks {
+    /*background-color: aquamarine;*/
+    height: 8em;
+    width: 100%;
+}
+
+.css-style__title--ufJKp6ks p{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 70px;
+}
+
+.css-style__content--nPnyNUG9 {
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    /*background-color: rgb(155, 179, 211);*/
+    border-radius: 0 0 30px 30px;
+    position: relative;
+}
+
+.css-style__cards--FziUPmDl {
+    height: 100%;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#css-style__anim_cards--uUbhpz6U{
+    transform: translate(0);
+    transition: transform 2s;
+}
+
+.css-style__single_card--Ihym6UjM {
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    cursor: pointer;
+    height: 85%;
+    width: 30vw;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    transition: opacity 1s;
+}
+
+.css-style__single_card--Ihym6UjM:hover {
+    opacity: 70%;
+}
+
+.css-style__news_image--aH8Ub_KM {
+    width: 100%;
+    height: 60%;
+}
+
+.css-style__news_image--aH8Ub_KM img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.css-style__text_info--UiF7RoRl {
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.css-style__text_info--UiF7RoRl p {
+    margin: 0;
+}
+
+#css-style__info--zfYdmlAv {
+    margin-top: 20px;
+}
+
+#css-style__date--bLH3Kcm3 {
+    font-weight: bold;
+}
+
+.css-style__direction_buttons--wMiBJJwn {
+    /*background-color: black;*/
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    justify-content: space-between;
+
+}
+
+.css-style__direction_buttons--wMiBJJwn img {
+    width: 50px;
+    opacity: 70%;
+}
+
+.css-style__direction_buttons--wMiBJJwn button {
+    opacity: 50%;
+    cursor: pointer;
+    border-radius: 100px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.css-style__direction_buttons--wMiBJJwn button:hover{
+    opacity: 80%;
+}
+
+/*Учебная программа и заявка на звонок*/
+.css-style__education--x425mcp7{
+    width: 94%;
+    height: 80vh;
+    margin-bottom: 10vh;
+    background-color: rgba(30, 30, 63, 0.51);
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+/*Нижнее меню*/
+
+.css-style__footer--H8hqEiv4{
+    justify-content: space-between;
+    width: 94%;
+    height: 45vh;
+    margin-bottom: 5vh;
+    background-color: rgba(30, 30, 63, 0.51);
+    border-radius: 30px;
+}
+
+.css-style__footer_card--ysvBfzYV {
+    width: 22%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.css-style__footer_card--ysvBfzYV h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.css-style__footer_text--r6XLn2fK {
+    font-size: 18px;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.css-style__footer_text--r6XLn2fK p {
+    margin: 0 0 9px;
+    cursor: pointer;
+}
+
+#css-style__to_applicants--uM9clSpU{
+    margin-left: 25px;
+}
+
+#css-style__contact_info--so6yH2pU {
+    margin-right: 25px;
+    text-align: right;
+    align-items: flex-end;
+}
+
+#css-style__contact_info--so6yH2pU p {
+    margin: 0 0 12px;
+}
+
+#css-style__contact_info--so6yH2pU a {
+    text-decoration: none;
+    color: #6680d2;
+    font-weight: bold;
+}
+
+#css-style__contact_info--so6yH2pU a:hover {
+    color: rgba(102, 128, 210, 0.57);
+}
+
+#css-style__phone_number--vNEWiLHQ {
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    border-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
