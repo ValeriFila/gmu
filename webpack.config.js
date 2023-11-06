@@ -34,15 +34,7 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: {
-                                localIdentName: '[path][name]__[local]--[hash:base64:8]'
-                            },
-                        },
-                    },
+                    MiniCssExtractPlugin.loader, 'css-loader'
                 ],
             },
         ],
