@@ -14,7 +14,7 @@ module.exports = {
     output: {
         clean: true,
         // Путь до директории (важно использовать path.resolve):
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         // Имя файла со сборкой:
         filename: 'bundle.js'
     },
