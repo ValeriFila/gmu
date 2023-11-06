@@ -36,8 +36,13 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader, 'css-loader'
                 ],
+
             },
-        ],
+            {
+                test:/\.(?:ico|gif|png|jpg|jpeg)$/i,
+                use: 'file-loader'
+            }
+        ]
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
