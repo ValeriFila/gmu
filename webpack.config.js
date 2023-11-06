@@ -17,7 +17,6 @@ module.exports = {
         path: path.resolve(__dirname, 'docs'),
         // Имя файла со сборкой:
         filename: 'bundle.js',
-        publicPath: '/gmu'
     },
     plugins: [
         new HtmlWebpackPlugin({
