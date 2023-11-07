@@ -5,6 +5,7 @@ let k = 5;
 let currentImgIndex = 0;
 const IMAGE_WIDTH = document.getElementById('anim_block').offsetWidth;
 
+//бэктики
 for (let i = 0; i < k; i++) {
     images.push(i + 1 + '.JPG');
 }
@@ -13,7 +14,7 @@ for (let i = 0; i < k; i++) {
 const buildAutoAnimatedGallery = function () {
     for (let i = 0; i < k; i++) {
         autoAnimSliderImage.innerHTML += `
-        <img src = "/resourses/images/${images[i]}" alt = "university image" width = "${IMAGE_WIDTH}">
+        <img src = "images/${images[i]}" alt = "university image" width = "${IMAGE_WIDTH}">
     `
     }
 };

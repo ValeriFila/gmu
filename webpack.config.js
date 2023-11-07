@@ -17,6 +17,7 @@ module.exports = {
         path: path.resolve(__dirname, 'docs'),
         // Имя файла со сборкой:
         filename: 'bundle.js',
+        assetModuleFilename: 'images/[name][ext]'
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -40,7 +41,7 @@ module.exports = {
             },
             {
                 test:/\.(?:ico|gif|png|jpg|jpeg)$/i,
-                use: 'file-loader'
+                type: 'asset/resource',
             }
         ]
     },

@@ -51,7 +51,7 @@ const buildArrayOfCards = () => {
         arrayOfCards.innerHTML += `
             <div class="single_card" id="${i+1}card">
                 <div class="news_image">
-                    <img src="/resourses/images/${arrayOfPictures[i]}">
+                    <img src="images/${arrayOfPictures[i]}">
                 </div>
                 <div class="text_info">
                     <p id="info">${arrayOfText[i]}</p>
