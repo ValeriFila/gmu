@@ -37,7 +37,6 @@ const arrayOfDate = [
 //количество карточек
 let k = 6;
 let cardIndex = 0;
-let lastCard;
 
 //массив карточек
 (function () {
@@ -49,22 +48,20 @@ let lastCard;
 const buildArrayOfCards = () => {
     for (let i = 0; i < k; i++) {
         arrayOfCards.innerHTML += `
-            <div class="single_card" id="${i+1}card">
+            <div class="single_card" id="card${i+1}" tabindex="1">
                 <div class="news_image">
                     <img src="images/${arrayOfPictures[i]}">
                 </div>
-                <div class="text_info">
+                <div class="text_info" id="cardText${i+1}" >
                     <p id="info">${arrayOfText[i]}</p>
                     <p id="date">${arrayOfDate[i]}</p>
                 </div>
             </div>
         `
     }
-    lastCard = document.getElementById(`${k}card`)
-    lastCard.style.marginRight = '-200px'
 }
 buildArrayOfCards();
-const card = document.getElementById('1card')
+const card = document.getElementById('card1')
 const CARD_WIDTH = card.offsetWidth + 100;
 
 const toLeftClick = () => {

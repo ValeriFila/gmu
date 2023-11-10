@@ -2,7 +2,7 @@ html {
     font-size: 16px;
     font-family: "Century Gothic";
     color: rgba(21, 24, 57, 1);
-    background-color: rgba(36, 47, 77, 0.52);
+    background-color: rgba(36, 47, 77, 0.38);
     /*--s: 30px; !* control the size*!*/
     /*--c1: #e5fcc2;*/
     /*--c2: #45ada8;*/
@@ -59,6 +59,7 @@ div {
 }
 
 .icon {
+    tab-index: 1;
     align-items: center;
     cursor: pointer;
 }

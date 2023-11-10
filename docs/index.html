@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ГМУ имени адм. Ф.Ф. Ушакова</title>
-<script defer src="bundle.js"></script><link href="css/main.05242b5c.css" rel="stylesheet"></head>
+<script defer src="bundle.js"></script><link href="css/main.32f4b8c8.css" rel="stylesheet"></head>
 <body>
 <div class="university">
 
@@ -12,16 +12,16 @@
         <div class="menu">
             <div class="icon">
                 <img src="images/university.png" alt="university icon">
-                <p>ГМУ имени адмирала Ф.Ф. Ушакова</p>
+                <p tabindex="1" id="gmu_label">ГМУ имени адмирала Ф.Ф. Ушакова</p>
             </div>
             <div class="menu_items">
-                <button class="item">Университет</button>
-                <button class="item">Образование</button>
-                <button class="item">Поступающим</button>
-                <button class="item">Студентам</button>
-                <button class="item">Контакты</button>
-                <img src="images/eye.png" alt="eye image">
-                <button class="mail" id="sendButton">Связаться с нами</button>
+                <button class="item" tabindex="1" id="universityText">Университет</button>
+                <button class="item" tabindex="1" id="educationText">Образование</button>
+                <button class="item" tabindex="1" id="entrantsText">Поступающим</button>
+                <button class="item" tabindex="1" id="studentsText">Студентам</button>
+                <button class="item" tabindex="1" id="contactsText">Контакты</button>
+                <img src="images/eye.png" alt="eye image" tabindex="1" id="versionForBlind">
+                <button class="mail" id="sendButton" tabindex="1">Связаться с нами</button>
             </div>
         </div>
     </div>
@@ -62,8 +62,8 @@
             </div>
 
             <div class="direction_buttons">
-                <button id="toLeftButton"><img src="images/to_left.png" alt="to left button"></button>
-                <button id="toRightButton"><img src="images/to_right.png" alt="to right button"></button>
+                <button id="toLeftButton"><img src="images/to_left.png" alt="to left button" tabindex="2"></button>
+                <button id="toRightButton"><img src="images/to_right.png" alt="to right button" tabindex="1"></button>
             </div>
         </div>
 
@@ -115,16 +115,15 @@
         </div>
         <div class="footer_card" id="contact_info">
             <h1>Контакты</h1>
-            <p id="phone_number"><a href="tel:+78617767800">+7 (8617) 76-78-00</a></p>
+            <p id="phone_number"><a href="tel:+78617767800" id="phone">+7 (8617) 76-78-00</a></p>
             <p>г. Новороссийск, просп. Ленина, 93 </p>
             <br>
-            <p>Приёмная комиссия: <a href="mailto:priem@imes.su">priem@imes.su</a></p>
-            <p>По общим вопросам: <a href="mailto:info@imes.su">info@imes.su</a></p>
+            <p>Приёмная комиссия: <a href="mailto:priem@imes.su" id="primCom">priem@imes.su</a></p>
+            <p>По общим вопросам: <a href="mailto:info@imes.su" id="standQuest">info@imes.su</a></p>
         </div>
     </div>
 
 </div>
-<!--<script src="/src/index.js"> </script>-->
 <script src="https://smtpjs.com/v3/smtp.js"> </script>
 </body>
 </html>
