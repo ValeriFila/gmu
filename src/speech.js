@@ -53,7 +53,6 @@ function speakText(text) {
 }
 function speakStandardText() {
     let text = document.activeElement.textContent
-    console.log(text)
     speakText(text)
 }
 
