@@ -5,7 +5,11 @@ const entrants = document.getElementById('entrantsText')
 const students = document.getElementById('studentsText')
 const contacts = document.getElementById('contactsText')
 const versionForBlind = document.getElementById('versionForBlind')
-const sendButton = document.getElementById('sendButton')
+const contactButton = document.getElementById('sendButton')
+const nameInput = document.getElementById('name')
+const emailInput = document.getElementById('email')
+const textInput = document.getElementById('text')
+const sendButton = document.getElementById('confirm_button')
 const toLeftButton = document.getElementById('toLeftButton')
 const toRightButton = document.getElementById('toRightButton')
 const card1 = document.getElementById('card1')
@@ -27,7 +31,7 @@ education.addEventListener('focus', speakStandardText)
 entrants.addEventListener('focus', speakStandardText)
 students.addEventListener('focus', speakStandardText)
 contacts.addEventListener('focus', speakStandardText)
-sendButton.addEventListener('focus', speakStandardText)
+contactButton.addEventListener('focus', speakStandardText)
 card1.addEventListener('focus', speakStandardText)
 card2.addEventListener('focus', speakStandardText)
 card3.addEventListener('focus', speakStandardText)
@@ -40,6 +44,10 @@ email2.addEventListener('focus', speakStandardText)
 
 //озвучка сфокусированного элемента без текста
 versionForBlind.addEventListener('focus', versionForBlindSpeech)
+nameInput.addEventListener('focus', nameInputSpeech)
+emailInput.addEventListener('focus', emailInputSpeech)
+textInput.addEventListener('focus', textInputSpeech)
+sendButton.addEventListener('focus', sendButtonSpeech)
 toLeftButton.addEventListener('focus',toLeftSpeech)
 toRightButton.addEventListener('focus', toRightSpeech)
 
@@ -54,7 +62,25 @@ function speakStandardText() {
 }
 
 function versionForBlindSpeech() {
-    let text = 'Выключить версию для слепых'
+    let text = 'Выключить режим для слепых'
+    speakText(text)
+}
+function nameInputSpeech() {
+    let text = 'Введите имя'
+    speakText(text)
+}
+
+function emailInputSpeech() {
+    let text = 'Введите почту'
+    speakText(text)
+}
+
+function textInputSpeech() {
+    let text = 'Введите тему обращения'
+    speakText(text)
+}
+function sendButtonSpeech() {
+    let text = 'Отправить форму обратной связи'
     speakText(text)
 }
 function toLeftSpeech() {
