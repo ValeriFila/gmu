@@ -8,7 +8,6 @@ const USER_EMAIL = document.getElementById('email');
 const TEXT = document.getElementById('text');
 const SUBMIT_BUTTON = document.getElementById('confirm_button');
 const FORM = document.getElementById('write_email_form');
-
 const sendButton = document.getElementById('sendButton');
 const popup = document.getElementById('popup');
 const background = document.getElementById('blur_background');
@@ -70,10 +69,26 @@ function validateForm() {
             Body : `Здравствуйте, ${name}! Спасибо за обращение в ГМУ 
             Ушакова! Ожидайте ответного письма.`
         }).then(
-            console.log('сообщение успешно отправлено')
+
+        );
+        Email.send({
+            SecureToken : 'a8328433-4994-4e7d-9d6b-656a16cc4e48',
+            To : "universitygmuushacova@gmail.com",
+            From : "universitygmuushacova@gmail.com",
+            Subject : `Пользователь ${name} отправил следующее сообщение с почты ${email}:`,
+            Body : text
+        }).then(
+
         );
 
         hidePopup()
     }
 }
-
+//закрыть попап по нажатию на таб
+const confirmButton = document.getElementById('confirm_button')
+confirmButton.addEventListener('keydown', closePopup)
+function closePopup(event) {
+    if(event.code === 'Tab') {
+        hidePopup()
+    }
+}

@@ -10,8 +10,6 @@ const nameInput = document.getElementById('name')
 const emailInput = document.getElementById('email')
 const textInput = document.getElementById('text')
 const sendButton = document.getElementById('confirm_button')
-const toLeftButton = document.getElementById('toLeftButton')
-const toRightButton = document.getElementById('toRightButton')
 const card1 = document.getElementById('card1')
 const card2 = document.getElementById('card2')
 const card3 = document.getElementById('card3')
@@ -48,8 +46,6 @@ nameInput.addEventListener('focus', nameInputSpeech)
 emailInput.addEventListener('focus', emailInputSpeech)
 textInput.addEventListener('focus', textInputSpeech)
 sendButton.addEventListener('focus', sendButtonSpeech)
-toLeftButton.addEventListener('focus',toLeftSpeech)
-toRightButton.addEventListener('focus', toRightSpeech)
 
 function speakText(text) {
     window.speechSynthesis.cancel()
@@ -81,15 +77,6 @@ function textInputSpeech() {
 }
 function sendButtonSpeech() {
     let text = 'Отправить форму обратной связи'
-    speakText(text)
-}
-function toLeftSpeech() {
-    let text = 'Пролистaть новости влево'
-    speakText(text)
-}
-
-function toRightSpeech() {
-    let text = 'Пролистaть новости вправо'
     speakText(text)
 }
 
